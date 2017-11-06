@@ -44,7 +44,7 @@ Page.defaultProps = {
   heroTitle: '',
   description: '',
   stylesheets: [
-    'https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css'
+    'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'
   ],
   backgroundClass: 'bg-dark-gray',
 }
