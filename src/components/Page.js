@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from './Header'
-import Hero from './Hero'
 import Footer from './Footer'
 import Tracking from './Tracking'
 
@@ -13,27 +12,20 @@ function Page(props) {
         description={props.description}
         stylesheets={props.stylesheets}
       />
-      <main className="lh-copy">
-        <Hero
-          heroTitle={props.heroTitle}
-          subtitle={props.description}
-          topLinks={props.topLinks}
-          backgroundClass={props.backgroundClass}
-        />
-
+      <main>
         {props.body}
 
         <Footer copyright={props.copyright} />
         {props.siteId && (
           <Tracking siteId={props.siteId} />
         )}
+
       </main>
     </div>
   )
 }
 
 Page.propTypes = {
-  heroTitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   stylesheets: PropTypes.array,
   topLinks: PropTypes.array,
@@ -41,12 +33,20 @@ Page.propTypes = {
 }
 
 Page.defaultProps = {
-  heroTitle: '',
   description: '',
   stylesheets: [
-    'https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css'
+    'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js'
   ],
-  backgroundClass: 'bg-dark-gray',
+}
+
+Alert.propTypes = {
+  className: PropTypes.string,
+  closeClassName: PropTypes.string,
+  color: PropTypes.string, // default: 'success'
+  isOpen: PropTypes.bool,  // default: true
+  toggle: PropTypes.func,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 }
 
 export default Page
