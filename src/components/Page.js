@@ -40,13 +40,5 @@ Page.defaultProps = {
   ],
 }
 
-Alert.propTypes = {
-  className: PropTypes.string,
-  closeClassName: PropTypes.string,
-  color: PropTypes.string, // default: 'success'
-  isOpen: PropTypes.bool,  // default: true
-  toggle: PropTypes.func,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-}
 
 export default Page

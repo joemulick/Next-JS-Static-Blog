@@ -5,10 +5,14 @@ import { formatDate } from '../src/utils/date'
 import { makeUrl, filterPosts } from '../src/utils/content'
 import CONFIG from '../content/index.json'
 import SUMMARY_JSON from '../content/summary.json'
+import { Alert } from 'reactstrap'
 
 function Index(props) {
   return (
     <div>
+      <Alert color="primary">
+        This is a primary alert — check it out!
+      </Alert>
       <Page
         siteTitle={`${CONFIG.siteTitle} - Index`}
         description={CONFIG.description}
@@ -23,7 +27,7 @@ function Body(props) {
   return (
     <div>
 
-      <h1>Test from inside pages index.js</h1>
+    <h1> I dont know what this section is for</h1>
 
     </div>
   )
