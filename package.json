@@ -1,10 +1,10 @@
 {
-  "name": "next-blog",
+  "name": "Joseph 'Joe' Mulick Portfolio",
   "version": "1.1.0",
-  "description": "Markdown based blog using next.js",
+  "description": "Next.js || React.js || Portfolio || Blog",
   "main": "index.js",
-  "homepage": "http://timscanlin.net",
-  "twitter": "tim_scanlin",
+  "homepage": "http://joemulick.io",
+  "twitter": "joemulick",
   "scripts": {
     "start": "node server.js",
     "build": "next build",
@@ -22,10 +22,12 @@
     "blog",
     "next.js",
     "next",
-    "Tim",
-    "Scanlin"
+    "Joe",
+    "Mulick",
+    "Joseph",
+    "react.js"
   ],
-  "author": "Tim Scanlin",
+  "author": "Joseph Mulick",
   "license": "MIT",
   "devDependencies": {
     "next": "^3.0.0-beta6",
